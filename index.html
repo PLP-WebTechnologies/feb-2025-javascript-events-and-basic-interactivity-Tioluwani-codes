@@ -1,0 +1,53 @@
+<!-- This is an interactive webpage that demonstrates various JavaScript functionalities including event handling, form validation, and dynamic content updates. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>My Fun Webpage</h1>
+
+    <!-- Event Handling -->
+    <button id="click-btn">Explore fun places</button>
+    <button id="hover-btn">Register</button>
+    <input id="keypress-input" type="text" placeholder="Ask a Question...">
+    <button id="double-click-btn">Send!</button>
+
+    <!-- Interactive Elements -->
+    <button id="toggle-btn">Toggle Text</button>
+    <div id="image-gallery">
+        <img src="images/pexels-marcin-dampc-807808-1684187.jpg" alt="Image 1">
+        <img src="images/pexels-belle-co-99483-1000445.jpg" alt="Image 2">
+        <img src="images/pexels-ollivves-1005456.jpg" alt="Image 3">
+    </div>
+    <div id="tabs">
+        <button class="tab-btn active">What do you have on your bucket list?</button>
+        <button class="tab-btn">Have you ever thought of fulfilling your wildest imaginations?</button>
+        <button class="tab-btn">Join me! Lets steal some fun together</button>
+        <div class="tab-content active">You haven't seen anything until you face your fears and wildest imaginations!!! Join the frenzy, hit the road, and live your best life. YOLO</div>
+        <div class="tab-content">Tab 2 content</div>
+        <div class="tab-content">Tab 3 content</div>
+    </div>
+
+    <!-- Form Validation -->
+    <form id="registration-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button id="submit-btn">Join Fun</button>
+    </form>
+    <div id="form-feedback"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
